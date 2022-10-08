@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="module" defer src="js/navigation.js"></script>
+	</head>
+	<body>
+		<header class="p-2 md:p-6 fixed top-0 left-0 right-0 z-40 flex items-center">
+			<div class="container mx-auto flex flex-row justify-between items-center">
+				<div class="flex flex-row gap-4 items-center mx-auto lg:mx-0">
+					<img class="h-6" src="img/spacex-logo.svg" alt="" />
+					<ul class="flex-row gap-3 hidden lg:flex uppercase text-white font-semibold">
+						<li><a class="hover:underline" href="">Falcon 9</a></li>
+						<li><a class="hover:underline" href="">Falcon Heavy</a></li>
+						<li><a class="hover:underline" href="">Dragon</a></li>
+						<li><a class="hover:underline" href="">Starship</a></li>
+						<li><a class="hover:underline" href="">Human Spaceflight</a></li>
+						<li><a class="hover:underline" href="">Rideshare</a></li>
+						<li><a class="hover:underline" href="">Starlink</a></li>
+						<li><a class="hover:underline" href="">Shop</a></li>
+					</ul>
+				</div>
+				<div class="flex gap-4 items-center absolute top-0 right-0 p-2 md:p-6">
+					<label id="" class="toggle-side-nav z-40 cursor-pointer flex flex-col w-6 h-6 justify-between overflow-hidden">
+						<input id="toggleNavigation" type="checkbox" class="peer appearance-none" />
+						<div class="bg-white h-[3px] w-6 transition-all origin-left peer-checked:rotate-[42deg] peer-checked:bg-white"></div>
+						<div class="bg-white h-[3px] w-6 transition-all peer-checked:bg-opacity-0 peer-checked:bg-white"></div>
+						<div class="bg-white h-[3px] w-6 transition-all origin-left peer-checked:-rotate-[42deg] peer-checked:bg-white"></div>
+					</label>
+				</div>
+			</div>
+		</header>
+		<aside class="side-nav bg-black fixed top-0 bottom-0 right-0 pt-20 pr-4 pl-28 z-30 translate-x-full transition-all">
+			<nav>
+				<ul class="text-white uppercase flex flex-col gap-3 items-end divide-y divide-neutral-600">
+					<li><a href="">Falcon 9</a></li>
+					<li><a href="">Falcon Heavy</a></li>
+					<li><a href="">Dragon</a></li>
+					<li><a href="">Starship</a></li>
+					<li><a href="">Human Spaceflight</a></li>
+					<li><a href="">Rideshare</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<section class="hero h-screen bg-cover bg-center bg-[url('/img/spacex-3.jpg')] flex items-end">
+			<div class="container mx-auto">
+				<div class="text-white uppercase flex flex-col pl-4 pb-16">
+					<p class="text-lg lg:text-xl">Upcoming Launch</p>
+					<h1 class="text-3xl lg:text-4xl font-bold">Crew-5 Mission</h1>
+					<a class="border py-4 px-12 w-max mt-6 border-white text-center hover:bg-white hover:text-black" href="">Watch</a>
+				</div>
+			</div>
+		</section>
+		<section class="hero h-screen bg-cover bg-bottom bg-[url('/img/spacex-5.jpg')] flex items-end">
+			<div class="container mx-auto">
+				<div class="text-white uppercase flex flex-col pl-4 pb-16">
+					<p class="text-lg lg:text-xl">Upcoming Launch</p>
+					<h1 class="md:text-2xl font-bold">Starlink Mission</h1>
+					<a class="border py-4 px-12 w-max mt-6 border-white text-center hover:bg-white hover:text-black" href="">Watch</a>
+				</div>
+			</div>
+		</section>
+		<section class="hero h-screen bg-cover bg-center offset bg-[url('/img/spacex-7.jpg')] flex items-end">
+			<div class="container mx-auto">
+				<div class="text-white uppercase flex flex-col pl-4 pb-16">
+					<h1 class="text-3xl lg:text-4xl font-bold">Starship Update</h1>
+					<a class="border py-4 px-12 mt-6 w-max border-white text-center hover:bg-white hover:text-black" href="">Learn More</a>
+				</div>
+			</div>
+		</section>
+		<section class="hero h-screen bg-cover bg-center offset bg-[url('/img/spacex-6.jpg')] flex items-end">
+			<div class="container mx-auto">
+				<div class="text-white uppercase flex flex-col pl-4 pb-16">
+					<h1 class="text-3xl lg:text-4xl font-bold">
+						Starship to land NASA <br />
+						astronauts on the moon
+					</h1>
+					<a class="border py-4 px-12 w-max mt-6 border-white text-center hover:bg-white hover:text-black" href="">Learn More</a>
+				</div>
+			</div>
+		</section>
+		<footer class="bg-black p-10">
+			<div class="container mx-auto flex flex-col items-center lg:items-start lg:flex-row lg:justify-center gap-4">
+				<p class="text-neutral-500 uppercase text-xs">Cody By elvarp.is</p>
+				<ul class="text-white text-xs uppercase flex flex-row flex-wrap justify-center gap-x-3 lg:gap-x-4 gap-y-2 font-semibold">
+					<li>Twitter</li>
+					<li>Youtube</li>
+					<li>Instagram</li>
+					<li>Flickr</li>
+					<li>Linkedin</li>
+					<li>Privacy Policy</li>
+					<li>Suppliers</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
